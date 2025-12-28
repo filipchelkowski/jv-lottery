@@ -12,9 +12,11 @@ public class Main {
         It prints information about each instance calling toString method.
          */
 
-        Lottery lottery = new Lottery();
+        final int BALLS_AMOUNT = 3;
 
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < BALLS_AMOUNT; i++) {
+
+            Lottery lottery = new Lottery();
 
             Ball randomBall = lottery.getRandomBall();
 
